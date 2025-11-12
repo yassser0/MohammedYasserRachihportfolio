@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Github, Mail, Phone, MapPin, Code, Database, Brain, Box, Link2, Award, BookOpen, ChevronDown, Menu, X, Linkedin } from 'lucide-react';
+
+import { Github, Mail, Phone, MapPin, Code, Database, Brain, Box, Link2, Award, BookOpen, ChevronDown, Menu, X, Linkedin, FileDown } from 'lucide-react';
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('about');
@@ -170,12 +171,18 @@ export default function Portfolio() {
 J’allie compétences techniques et esprit d’innovation pour concevoir des solutions intelligentes et évolutive
           </p>
           <div className="flex gap-4 justify-center mb-12">
-            <a href="https://github.com/yassser0" target="_blank" rel="noopener noreferrer" className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg flex items-center gap-2 transition-all">
-              <Github className="w-5 h-5" /> GitHub
-            </a>
             <button onClick={() => scrollToSection('contact')} className="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-lg transition-all">
               Me contacter
             </button>
+              <a
+  href={`${import.meta.env.BASE_URL}CV.pdf`}
+  download="CV_Mohammed_Yasser_Rachih.pdf"
+  className="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg flex items-center gap-2 transition-all"
+>
+  <FileDown className="w-5 h-5" /> Télécharger CV
+</a>
+
+
           </div>
           <ChevronDown className="w-8 h-8 mx-auto animate-bounce text-purple-400" />
         </div>
