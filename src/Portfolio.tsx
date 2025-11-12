@@ -164,7 +164,7 @@ export default function Portfolio() {
             Mohammed Yasser Rachih
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-4">
-            Étudiant en Master Big Data & Data Science
+           Data Scientist & Ingénieur Big Data & Full-Stack Developer | Créateur de solutions intelligentes, évolutives et pilotées par la donnée
           </p>
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
             Étudiant en Master Big Data & Data Science, passionné par le développement logiciel, l’IA et la blockchain.
