@@ -166,10 +166,6 @@ export default function Portfolio() {
           <p className="text-xl md:text-2xl text-gray-300 mb-4">
            Data Scientist & Ingénieur Big Data & Full-Stack Developer | Créateur de solutions intelligentes, évolutives et pilotées par la donnée
           </p>
-          <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-            Étudiant en Master Big Data & Data Science, passionné par le développement logiciel, l’IA et la blockchain.
-J’allie compétences techniques et esprit d’innovation pour concevoir des solutions intelligentes et évolutive
-          </p>
           <div className="flex gap-4 justify-center mb-12">
             <button onClick={() => scrollToSection('contact')} className="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-lg transition-all">
               Me contacter
@@ -194,9 +190,9 @@ J’allie compétences techniques et esprit d’innovation pour concevoir des so
           <h2 className="text-4xl font-bold mb-8 text-center">À propos</h2>
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
             <p className="text-lg text-gray-300 leading-relaxed">
-              Étudiant en Master Big Data & Data Science à la Faculté des Sciences Ben M’Sick, je me passionne pour le développement logiciel, l’intelligence artificielle et les technologies blockchain.
-Mon parcours académique et mes projets personnels m’ont permis de développer une expertise complète, allant de la conception d’architectures microservices à la mise en œuvre de modèles de machine learning, tout en explorant le Web3 et les applications décentralisées.
-Curieux et rigoureux, j’aime transformer des idées innovantes en solutions concrètes et performantes.
+              Étudiant en Master Big Data & Data Science à la Faculté des Sciences Ben M’Sick, je suis passionné par le développement logiciel, l’intelligence artificielle et les technologies blockchain.
+Mon parcours académique et mes projets m’ont permis d’acquérir une expertise pluridisciplinaire, couvrant la conception d’architectures microservices, la mise en œuvre de modèles de machine learning, ainsi que le développement d’applications décentralisées intégrant le Web3.
+Animé par la rigueur et la curiosité, je m’efforce de transformer des idées innovantes en solutions technologiques performantes et évolutives, au croisement du Big Data, de l’IA et du Cloud.
             </p>
             <div className="flex justify-center my-6">
   <div className="h-1 w-24 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full"></div>
