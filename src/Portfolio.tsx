@@ -198,6 +198,21 @@ J’allie compétences techniques et esprit d’innovation pour concevoir des so
 Mon parcours académique et mes projets personnels m’ont permis de développer une expertise complète, allant de la conception d’architectures microservices à la mise en œuvre de modèles de machine learning, tout en explorant le Web3 et les applications décentralisées.
 Curieux et rigoureux, j’aime transformer des idées innovantes en solutions concrètes et performantes.
             </p>
+            <div className="flex justify-center my-6">
+  <div className="h-1 w-24 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full"></div>
+</div>
+
+            <h3 className="text-2xl font-semibold text-purple-400 mt-8 mb-4">Ce que je recherche ?</h3>
+
+            <p className="text-lg text-gray-300 leading-relaxed mt-6">
+  Actuellement à la recherche d’un <span className="text-purple-400 font-semibold">stage</span> ou d’une <span className="text-purple-400 font-semibold">opportunité</span> en 
+  <span className="text-purple-400 font-semibold"> Data Science</span>, 
+  <span className="text-purple-400 font-semibold"> Big Data</span>, 
+  <span className="text-purple-400 font-semibold"> Machine Learning</span> ou 
+  <span className="text-purple-400 font-semibold"> Développement Full-Stack</span>, 
+  je souhaite rejoindre une équipe innovante où je pourrai mettre mes compétences au service de projets à fort impact.
+</p>
+
           </div>
         </div>
       </section>
