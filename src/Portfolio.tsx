@@ -309,6 +309,8 @@ Curieux et rigoureux, j’aime transformer des idées innovantes en solutions co
                 <Github className="w-5 h-5" />
                 github.com/yassser0
               </a>
+            </div>
+             <div className="mt-8 pt-8 border-t border-slate-700">
               <a href="https://www.linkedin.com/in/mohamed-yasser-rachih-249121373/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors">
                 <Linkedin className="w-5 h-5" />
                 linkedin.com/Mohammed Yasser Rachih
