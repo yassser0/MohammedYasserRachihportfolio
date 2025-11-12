@@ -277,7 +277,7 @@ Curieux et rigoureux, j’aime transformer des idées innovantes en solutions co
           <div className="mt-8 bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 text-center">
             <Award className="w-12 h-12 mx-auto mb-4 text-yellow-400" />
             <h3 className="text-xl font-bold text-purple-400 mb-2">Certification</h3>
-            <p className="text-gray-300">Java SE 17 Developer</p>
+            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=029243E51686CB1B18888C9ED6A001BD59E8AAF1065E53301445372E7D02C664" className="text-gray-300">Java SE 17 Developer</a>
           </div>
         </div>
       </section>
