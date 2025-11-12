@@ -1,17 +1,18 @@
 {
   "name": "mohammed-yasser-rachih-portfolio",
-  "homepage": "https://yassser0.github.io/portfolio-yasser",
+  "homepage": "https://yassser0.github.io/MohammedYasserRachihportfolio",
 
 
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "deploy": "gh-pages -d dist"
+}
+,
   "dependencies": {
     "lucide-react": "^0.553.0",
     "react": "^19.2.0",
