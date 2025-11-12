@@ -317,7 +317,7 @@ Curieux et rigoureux, j’aime transformer des idées innovantes en solutions co
       {/* Footer */}
       <footer className="py-8 px-4 bg-slate-900 text-center text-gray-400">
         <p>© 2025 Mohammed Yasser Rachih. Tous droits réservés.</p>
-        <p className="mt-2 text-sm">Langues: Français • Anglais • Arabe</p>
+        
       </footer>
     </div>
   );
