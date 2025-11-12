@@ -277,7 +277,7 @@ Curieux et rigoureux, j’aime transformer des idées innovantes en solutions co
           <div className="mt-8 bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 text-center">
             <Award className="w-12 h-12 mx-auto mb-4 text-yellow-400" />
             <h3 className="text-xl font-bold text-purple-400 mb-2">Certification</h3>
-            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=029243E51686CB1B18888C9ED6A001BD59E8AAF1065E53301445372E7D02C664" className="text-gray-300">oracle.com/Java SE 17 Developer</a>
+            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=029243E51686CB1B18888C9ED6A001BD59E8AAF1065E53301445372E7D02C664" className="text-gray-300">oracle.com/JavaSE17Developer</a>
           </div>
         </div>
       </section>
@@ -313,7 +313,7 @@ Curieux et rigoureux, j’aime transformer des idées innovantes en solutions co
              <div className="mt-8 pt-8 border-t border-slate-700">
               <a href="https://www.linkedin.com/in/mohamed-yasser-rachih-249121373/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors">
                 <Linkedin className="w-5 h-5" />
-                linkedin.com/Mohammed Yasser Rachih
+                linkedin.com/MohammedYasserRachih
               </a>
             </div>
           </div>
