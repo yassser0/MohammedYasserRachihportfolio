@@ -166,7 +166,8 @@ export default function Portfolio() {
             Étudiant en Master Big Data & Data Science
           </p>
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-            Passionné par les technologies modernes, le développement logiciel et l'intelligence artificielle. Curieux, autonome et motivé par l'apprentissage constant.
+            Étudiant en Master Big Data & Data Science, passionné par le développement logiciel, l’IA et la blockchain.
+J’allie compétences techniques et esprit d’innovation pour concevoir des solutions intelligentes et évolutive
           </p>
           <div className="flex gap-4 justify-center mb-12">
             <a href="https://github.com/yassser0" target="_blank" rel="noopener noreferrer" className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg flex items-center gap-2 transition-all">
@@ -186,7 +187,9 @@ export default function Portfolio() {
           <h2 className="text-4xl font-bold mb-8 text-center">À propos</h2>
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
             <p className="text-lg text-gray-300 leading-relaxed">
-              Étudiant en Master Big Data & Data Science à la Faculté des Sciences Ben M'Sick, je suis passionné par le développement logiciel, l'intelligence artificielle et les technologies blockchain. Mon parcours m'a permis d'acquérir une expertise diversifiée allant de l'architecture microservices au machine learning, en passant par le développement d'applications décentralisées.
+              Étudiant en Master Big Data & Data Science à la Faculté des Sciences Ben M’Sick, je me passionne pour le développement logiciel, l’intelligence artificielle et les technologies blockchain.
+Mon parcours académique et mes projets personnels m’ont permis de développer une expertise complète, allant de la conception d’architectures microservices à la mise en œuvre de modèles de machine learning, tout en explorant le Web3 et les applications décentralisées.
+Curieux et rigoureux, j’aime transformer des idées innovantes en solutions concrètes et performantes.
             </p>
           </div>
         </div>
