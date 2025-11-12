@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Github, Mail, Phone, MapPin, Code, Database, Brain, Box, Link2, Award, BookOpen, ChevronDown, Menu, X } from 'lucide-react';
+import { Github, Mail, Phone, MapPin, Code, Database, Brain, Box, Link2, Award, BookOpen, ChevronDown, Menu, X, Linkedin } from 'lucide-react';
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('about');
@@ -223,7 +223,7 @@ Curieux et rigoureux, j’aime transformer des idées innovantes en solutions co
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Projets Académiques</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">Projets</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, idx) => (
               <div key={idx} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 hover:transform hover:scale-105 transition-all shadow-xl">
@@ -308,6 +308,10 @@ Curieux et rigoureux, j’aime transformer des idées innovantes en solutions co
               <a href="https://github.com/yassser0" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors">
                 <Github className="w-5 h-5" />
                 github.com/yassser0
+              </a>
+              <a href="https://www.linkedin.com/in/mohamed-yasser-rachih-249121373/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors">
+                <Linkedin className="w-5 h-5" />
+                linkedin.com/Mohammed Yasser Rachih
               </a>
             </div>
           </div>
