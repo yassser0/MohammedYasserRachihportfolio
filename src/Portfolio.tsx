@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { motion } from "framer-motion";
+
 
 import {
   Github, Mail, Phone, MapPin, Code, Database, Brain, Box, Link2,
@@ -38,22 +40,22 @@ export default function Portfolio() {
     {
       category: "Développement & Programmation",
       icon: <Code className="w-6 h-6" />,
-      items: ["Java (Spring Boot, Java EE)", "Python (scikit-learn, PyTorch)", "HTML/CSS/JavaScript", "Ethers.js, Streamlit"]
+      items: ["Java (Spring Boot, Java EE)", "Python", "HTML/CSS/JavaScript", "React","C & C++", "Node.js", "RESTful APIs" ]
     },
     {
       category: "Data Science & Machine Learning",
       icon: <Brain className="w-6 h-6" />,
-      items: ["Machine Learning & Deep Learning", "Clustering (K-Means, PCA)", "GANs avec PyTorch", "Analyse de métriques (FID, loss)"]
+      items: ["Machine Learning & Deep Learning",]
     },
     {
       category: "Architecture Logicielle",
       icon: <Box className="w-6 h-6" />,
-      items: ["Microservices (API Gateway, Eureka)", "Agile / DDD", "CI/CD (Jenkins, GitHub Actions)"]
+      items: ["Microservices (API Gateway, Eureka)", "CI/CD (Jenkins, GitHub Actions)","déploiement cloud" ,"Automatisation des pipelines DevOps", ]
     },
     {
       category: "Blockchain & Web3",
       icon: <Link2 className="w-6 h-6" />,
-      items: ["Smart Contracts (Solidity)", "MetaMask & Ethers.js"]
+      items: ["Solidity", "MetaMask & Ethers.js",]
     },
     {
       category: "Bases de données & Cloud",
@@ -68,63 +70,57 @@ export default function Portfolio() {
   const projects = [
     {
       title: "Système de bibliothèque en microservices",
-      description: "Architecture microservices avec Spring Boot, Spring Cloud Gateway et Eureka Server. Interface HTML/JS et Thymeleaf.",
+      description: "Ce projet facilite la gestion d’un écosystème complet de microservices. Il intègre une API Gateway pour un routage réactif et centralisé, Eureka pour la découverte dynamique des services, ainsi que plusieurs microservices dédiés à la gestion des utilisateurs, des livres, de l’administration et des paiements. Grâce à des APIs REST structurées et une architecture modulaire et sécurisée, la solution assure des échanges fiables, une maintenance simplifiée et une évolutivité optimale.",
       tags: ["Spring Boot", "Microservices", "DDD", "MySQL"],
       github: "https://github.com/yassser0/LibraryMicro"
     },
     {
       title: "CI/CD avec Jenkins, Docker & Kubernetes",
-      description: "Pipeline DevOps complet pour une application React. Automatisation totale.",
+      description: "Mise en œuvre d’un pipeline DevOps complet pour le déploiement continu d’une application React. Utilisation de Jenkins pour l'intégration continue, Docker pour la conteneurisation de l’application, et Kubernetes pour l’orchestration et le déploiement automatisé. Le code source est suivi via GitHub, avec des hooks Jenkins déclenchant les étapes de build, test et déploiement. Le projet démontre la maîtrise des pratiques CI/CD, de la containerisation, et du déploiement cloud-native sur un cluster Kubernetes.",
       tags: ["Jenkins", "Docker", "Kubernetes", "React"],
       github: "https://github.com/yassser0/DevOps-Todo-App"
     },
     {
       title: "Application de diplômes sur blockchain",
-      description: "DApp Ethereum pour enregistrer et vérifier des diplômes.",
+      description: "Développement d’une application décentralisée (DApp) pour l’enregistrement et la vérification de diplômes via la blockchain Ethereum. Le smart contract est écrit en Solidity, et l’interface utilisateur en React.js communique avec MetaMask pour interagir avec la blockchain.",
       tags: ["Blockchain", "Solidity", "React", "Web3"],
       github: "https://github.com/yassser0/diploma-contract"
     },
     {
       title: "Certificats de propriété via Blockchain",
-      description: "Vérification et consultation de certificats de propriété.",
+      description: "Développement d’une solution web permettant aux citoyens et aux administrations de consulter et vérifier l’authenticité de certificats de propriété en toute transparence grâce à la technologie blockchain. Interface intuitive en React, sécurisation des données via des contrats intelligents (Solidity).",
       tags: ["Blockchain", "Solidity", "React"],
       github: "https://github.com/yassser0/CertificatProprieteBlockchain"
     },
     {
       title: "Prédiction du rendement agricole",
-      description: "XGBoost + Pandas pour prédire les rendements agricoles.",
+      description: "Développement d’un modèle de régression pour prédire le rendement agricole à partir de données climatiques, géographiques et culturales. Préparation des données avec Pandas et scikit-learn, encodage, normalisation, puis entraînement d’un modèle XGBoost Regressor. Évaluation réalisée via RMSE et R², avec visualisation des rendements réels vs prédits. Ce projet illustre l’application de techniques de Machine Learning sur des données réelles du domaine agricole.",
       tags: ["Machine Learning", "Python", "XGBoost", "Pandas"],
       github: "https://github.com/yassser0/ProjetAgriML"
     },
     {
       title: "Benchmark d'optimiseurs pour GANs",
-      description: "Comparaison Adam vs SGD vs RMSprop sur GANs.",
+      description: "Comparaison des performances de différents algorithmes d’optimisation (SGD, Adam, RMSprop) dans l’entraînement de Generative Adversarial Networks (GANs) pour la génération d’images. Utilisation de PyTorch pour implémenter les GANs et entraîner les modèles sur des ensembles de données d’images. Analyse des résultats en termes de qualité des images générées et de vitesse de convergence, fournissant des insights sur l’impact des choix d’optimiseurs dans le contexte des GANs.",
       tags: ["Deep Learning", "PyTorch", "GANs"],
       github: "https://github.com/yassser0/GAN_Optimizer_Benchmark"
     },
     {
       title: "Clustering d'émissions Netflix",
-      description: "K-Means + PCA + Streamlit.",
+      description: "Analyse de données et clustering K-Means des émissions Netflix. Utilisation de Streamlit pour une interface interactive permettant aux utilisateurs d’explorer les clusters formés en fonction de divers attributs des émissions. Le projet inclut le prétraitement des données, la sélection des caractéristiques pertinentes, et l’application de l’algorithme K-Means pour identifier des groupes similaires d’émissions.",
       tags: ["Machine Learning", "K-Means", "Streamlit"],
       github: "https://github.com/yassser0/netflix-clustering"
     },
     {
       title: "ChatRoom – Messagerie temps réel",
-      description: "Chat WebSocket avec MongoDB et STOMP.",
+      description: "Application de chat en temps réel utilisant WebSocket pour la communication bidirectionnelle. Le backend est développé avec Spring Boot, gérant les connexions WebSocket et la persistance des messages dans une base de données MongoDB. Le frontend utilise Thymeleaf pour le rendu dynamique des pages. Les utilisateurs peuvent envoyer et recevoir des messages instantanément, avec une interface utilisateur simple et réactive.",
       tags: ["WebSocket", "MongoDB", "Thymeleaf"],
       github: "https://github.com/yassser0/chatroom"
     },
     {
       title: "Réseau de neurones en NumPy",
-      description: "Réseau neuronal codé from scratch.",
+      description: "Implémentation d’un réseau de neurones fully-connected à partir de zéro en utilisant uniquement NumPy. Le réseau est capable d’apprendre la fonction XOR via la rétropropagation. Le projet inclut des couches denses, des fonctions d’activation (tanh), et une fonction de perte MSE personnalisée. Comprend une boucle d’entraînement avec affichage des erreurs et visualisation des performances. Ce projet démontre une compréhension approfondie des fondamentaux du deep learning, sans recourir à des frameworks externes comme TensorFlow ou PyTorch.",
       tags: ["Deep Learning", "NumPy", "Python"],
       github: "https://github.com/yassser0/neuralNetMLTP"
-    },
-    {
-      title: "Spotify Audio Feature Analyzer",
-      description: "Analyse avancée de features audio via API Spotify.",
-      tags: ["Python", "Spotify API", "DataViz"],
-      github: "https://github.com/yassser0/SpotifyAudioFeatureAnalyzer"
     }
   ];
 
@@ -137,7 +133,6 @@ export default function Portfolio() {
     { year: "2023", degree: "DEUG", school: "FSBM", spec: "SMAI" },
     { year: "2021", degree: "Baccalauréat", school: "École Oued Dahab", spec: "Physique" }
   ];
-
   const scrollToSection = (id: string) => {
     setActiveSection(id);
     setIsMenuOpen(false);
@@ -228,7 +223,7 @@ export default function Portfolio() {
 
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
             <p className="text-lg text-gray-300 leading-relaxed">
-              Étudiant en Master Data Science & Big Data (DSBD) et développeur Full-Stack, je me spécialise dans l’analyse avancée des données, la modélisation statistique, l’apprentissage automatique et le traitement des données massives. Mon parcours me permet de maîtriser les technologies clés du Big Data tout en développant des applications web robustes et performantes grâce à une expertise en développement front-end et back-end. Passionné par l’intelligence artificielle, l’ingénierie logicielle et les architectures modernes, je conçois des solutions data-driven intelligentes, évolutives et orientées performance. Animé par la rigueur et la curiosité, je transforme les données et les besoins métier en outils concrets, fiables et innovants.
+              🎓 Étudiant en Master Sata Science & Big Data, spécialité Big Data, avec une expertise en analyse avancée, modélisation statistique et Machine Learning. Grâce à mes compétences en conception et développement d’applications web, je crée des solutions data-driven performantes, évolutives et alignées sur les besoins métier. Passionné par l’IA et les architectures modernes, je transforme les données en outils concrets et innovants.
             </p>
 
             <div className="flex justify-center my-6">
@@ -354,12 +349,12 @@ export default function Portfolio() {
               <div key={idx} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 flex gap-6 hover:scale-105 transition-all shadow-xl">
 
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-yellow-400">{cert.title}</h3>
+                  
 
                   {/* provider + icône Link */}
                   <div className="flex items-center gap-2">
-                    <p className="text-gray-300">{cert.provider}</p>
-
+                  
+                    <h3 className="text-xl font-bold text-yellow-400">{cert.title}</h3>
                     {cert.link && (
                       <a
                         href={cert.link}
